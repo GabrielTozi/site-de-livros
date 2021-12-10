@@ -3,6 +3,8 @@ body {
 
     color: white;
     font-family: 'Rajdhani', sans-serif;
+
+    text-align: center;
 }
 
 
@@ -28,19 +30,20 @@ body {
     margin-left: 30px;
     margin-right: 30px;
 
-    border: solid rgba(51, 51, 51,0) 1px;
+    border: solid rgba(51, 51, 51, 0) 1px;
 
     transition: 0.50s;
 }
 
-.back:hover, .userbook:hover {
+.back:hover,
+.userbook:hover {
     background: rgb(33, 32, 32);
     display: inline-block;
     border: solid white 1px;
 }
 
 #fnd {
-    background: rgba(51, 51, 51,0.9);
+    background: rgba(51, 51, 51, 0.9);
 
     position: relative;
     top: 160px;
@@ -67,17 +70,18 @@ header img {
 }
 
 .logo {
-    float: left;
+    position: absolute;
 
-    transform: translateX(350px);
+    margin-left: 20%;
+    margin-right: 0;
+    
 }
 
 #pesquisa {
     margin-top: 15px;
     margin-bottom: 15px;
-
-    position: relative;
-    right: 90px;
+    margin-left: auto;    
+    margin-right: 0;
 }
 
 #lupa {
@@ -91,18 +95,14 @@ header img {
 #pena {
     position: absolute;
     right: 190px;
-    top: 10px;
+    top: 7px;
 
 }
 
 .dropdown {
     position: absolute;
-    top: 9px;
-    right: 350px;
-
-    display: inline-block;
-
-    transition-duration: 1.0s;
+    top: 5px;
+    right: 250px;   
 }
 
 .dropbtn {
@@ -124,8 +124,6 @@ header img {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-
-
 }
 
 .dropdown-content a {
@@ -133,8 +131,6 @@ header img {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-
-
 }
 
 .dropdown-content a:hover {
@@ -193,9 +189,9 @@ h1 {
 
     text-decoration: underline;
 
-    border: solid white 1px;
-    background: rgba(202, 194, 194, 0.3);
-    color: white;
+    border: solid #ffffff 1px;
+    background: rgba(255, 255, 255,0.6);
+    color: black;
 
     display: inline-block;
 }
@@ -215,21 +211,25 @@ h2 {
 }
 
 #banner {
-    text-align: center;
+    max-width: 1000px;
+    display: inline-block;
 
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.capa{
+.capa {
     border: solid rgb(23, 23, 23) 1px;
     transition: 0.50s;
 }
-.capa:hover{
+
+.capa:hover {
     border: solid white 1px;
 }
 
-#user{
+#user {
     width: 100%;
     height: 430px;
 
@@ -238,7 +238,7 @@ h2 {
     text-align: center;
 }
 
-.userbook{
+.userbook {
     display: inline-block;
 
     border: solid black 1px;
@@ -252,11 +252,29 @@ h2 {
     transition: 0.50s;
 }
 
-#titulo-book{
+#titulo-book {
     text-align: left;
     font-size: 25px;
-    transform: translate(200px,25px);
+    transform: translate(200px, 25px);
 
+}
+
+#seta {
+    transform: scaleX(-1);
+
+    position: absolute;
+    margin: 0;
+    margin-top: 120px;
+    margin-left: -50px;
+}
+
+#seta2 {
+    position: absolute;
+    margin: 0;
+    margin-top: 120px;
+    margin-left: 1%;
+
+    transform: translateX(-15px);
 }
 
 /* ==========footer========= */
@@ -286,23 +304,23 @@ footer {
     margin-top: 20px;
 }
 
-.colunas a{
+.colunas a {
     text-decoration: none;
     color: white;
 }
 
-.colunas a:hover{
+.colunas a:hover {
     transition: 0.50s;
     color: red;
 }
 
-#corvo{
+#corvo {
     position: absolute;
     left: 20px;
-    
-    margin-top: -50px;
+
+    margin-top: -20px;
 }
 
-h3{
+h3 {
     color: coral;
 }

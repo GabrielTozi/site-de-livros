@@ -7,6 +7,143 @@
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="imagens/raven_.ico">
+    <style>
+        @media only screen and (max-width: 1265px) {
+
+            /* livros do usuário */
+            #user {
+                width: 100%;
+                height: 730px;
+
+                overflow: hidden;
+
+                text-align: center;
+            }
+
+            #seta {
+                transform: scaleX(-1);
+
+                position: absolute;
+                margin: 0;
+                margin-top: 290px;
+                margin-left: -50px;
+            }
+
+            #seta2 {
+                position: absolute;
+                margin: 0;
+                margin-top: -40px;
+                margin-left: 30%;
+
+                transform: translateX(-15px);
+            }
+
+            /* header */
+            .dropdown {
+                position: absolute;
+                top: 5px;
+                right: 50px;
+            }
+
+            .logo {
+                position: absolute;
+                margin-left: 10%;
+                margin-right: 0;
+            }
+
+            #pesquisa {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: 0;
+            }
+
+            #lupa {
+                display: inline-block;
+                transform: scaleX(-1);
+
+                margin-left: 10px;
+                margin-top: 8px;
+            }
+
+            /* fundo dos lançamentos */
+            .fundo {
+                background: url(imagens/alfons-morales-YLSwjSy7stw-unsplash.jpg) center/cover;
+                height: 745px;
+
+                text-align: center;
+            }
+
+            /* fundo da recomendação */
+            .rec {
+                background: rgb(23, 23, 23);
+                text-align: center;
+
+                padding: 40px;
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            /* footer */
+            #corvo {
+                position: absolute;
+                left: 0px;
+                margin-top: 150px;
+                width: 50px;
+            }
+
+        }
+
+        @media only screen and (max-width: 855px) {
+
+            /* botao */
+            .dropdown {
+                position: absolute;
+                top: 5px;
+                right: 0px;
+            }
+
+            /* logo */
+            header li {
+                display: block;
+            }
+
+            /* fundo da recomendação */
+            .rec {
+                background: rgb(23, 23, 23);
+                text-align: center;
+
+                padding: 40px;
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            /* livros do usuário */
+            #user {
+                width: 100%;
+                height: 1050px;
+
+                overflow: hidden;
+
+                text-align: center;
+            }
+
+            #seta2 {
+                position: absolute;
+                margin: 0;
+                margin-top: -360px;
+                margin-left: 18%;
+
+                transform: translateX(-15px);
+            }
+
+            #list {
+                text-align: center;
+            }
+        }
+    </style>
     <title>Dark space Book</title>
 </head>
 
@@ -93,8 +230,9 @@
 
     <!-- recomendação de uso -->
     <div id="user">
+        <hr>
         <p id="titulo-book">Selecionados Para Você:</p>
-
+        <img id="seta" src="imagens/proximo.png" width="60px">
         <div class="userbook">
             <img src="imagens/azul.png" height="270px"><br>
             <strong>Neurocomic: A Caverna das Memórias</strong>
@@ -119,6 +257,9 @@
             <img src="imagens/junji ito.png"><br>
             <strong>Coleção de historias: Junji Ito</strong>
         </div>
+
+        <img id="seta2" src="imagens/proximo.png" width="60px">
+        <hr>
     </div>
 
     <!-- capa2
@@ -129,16 +270,20 @@
     <!-- banner -->
     <div id="banner">
         <img src="imagens/capa grande.png">
+
     </div>
     <hr>
+
+    <!-- editoras -->
     <div id="editoras">
         <img src="imagens/editoras.png">
+
     </div>
     <hr>
 
     <!-- rodapé -->
     <footer>
-        <img id="corvo" src="imagens/Web_Photo_Editor-removebg-preview.png" width="300px">
+        <img id="corvo" src="imagens/Web_Photo_Editor-removebg-preview.png" width="200px">
         <div id="list">
             <div class="colunas">
                 <h3><strong>Termos de Privacidade</strong></h3>
@@ -175,10 +320,9 @@
                 <a href="#">Dark Love</a><br>
             </div>
         </div>
-
+        <hr>
     </footer>
-    <hr>
-
+   
 </body>
 
 </html>
